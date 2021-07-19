@@ -2933,14 +2933,14 @@ fieldset:disabled .btn {
 }
 .btn-primary {
     color: #f6f9fe;
-    background-color: #4232c2;
-    border-color: #4232c2;
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus,
 .btn-primary:hover {
-    background-color: #382ba5;
-    border-color: #35289b;
+    background-color: #273c75;
+    border-color: #273c75;
     color: #f6f9fe;
 }
 .btn-check:focus + .btn-primary,
