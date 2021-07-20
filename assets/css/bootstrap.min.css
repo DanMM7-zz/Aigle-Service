@@ -266,7 +266,7 @@ sup {
     top: -0.5em;
 }
 a {
-    color: #4232c2;
+    color: #e74c3c;
     text-decoration: underline;
 }
 a:hover {
@@ -2973,13 +2973,13 @@ fieldset:disabled .btn {
 }
 .btn-secondary {
     color: #000;
-    background-color: #6266ea;
-    border-color: #6266ea;
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
 .btn-secondary:hover {
     color: #000;
-    background-color: #7a7ded;
-    border-color: #7275ec;
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
 .btn-check:focus + .btn-secondary,
 .btn-secondary:focus {
@@ -4870,7 +4870,7 @@ fieldset:disabled .btn {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background-color: #4232c2;
+    background-color: #2980b9;
     -webkit-transition: width 0.6s ease;
     transition: width 0.6s ease;
 }
