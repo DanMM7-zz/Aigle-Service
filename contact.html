@@ -16,6 +16,15 @@
   <link rel="stylesheet" href="assets/css/templatemo.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- Custom -->
+  <script src="assets/js/custom.js"></script>
+  <!-- Email -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_LCMH6TmhDy0jMq7orRx2L");
+    })();
+  </script>
 
 
 </head>
@@ -83,24 +92,24 @@
     </section>
     <!-- End Banner Hero -->
 
-    <!-- Start Team Member -->
+    <!-- Start Map and Address -->
     <section class="container py-5">
         <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
 
             <div class="col-lg-3">
                 <h2 class="h2 py-5 typo-space-line">Trouve nous</h2>
                 <p class="text-muted light-300">
-                    <strong>Adresse de bureau:</strong> avenue lubumbashi n 45 quartier makutano commune lubumbashi ville de lubumbashi
+                    <strong>Adresse de bureau:</strong> 45, Av de ubumbashi, Makutano, Lubumbashi , ville de Lubumbashi, province du haut Katanga en RDC
                 </p>
             </div>
 
             <div class="col-lg-9 row">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125032.61011506901!2d27.43215153618285!3d-11.675333616055408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ea34874cbd9%3A0xa1c6f5a74f805b2f!2sLubumbashi%2C%20Democratic%20Republic%20of%20the%20Congo!5e0!3m2!1sen!2sza!4v1626784823886!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.42848576866!2d27.479797315288366!3d-11.664015291722972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ec0d5739f99%3A0x47ee3b3afb30095c!2sMakutano!5e0!3m2!1sen!2sza!4v1627685192398!5m2!1sen!2sza" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         </div>
     </section>
-    <!-- End Team Member -->
+    <!-- End Map and Address -->
 
     <!-- Start Contact -->
     <section class="container py-5">
@@ -113,7 +122,6 @@
 
         <div class="row pb-4">
             <div class="col-lg-4">
-
                 <div class="contact row mb-4">
                     <div class="contact-icon col-lg-3 col-3">
                         <div class="border py-3 mb-2 text-center border rounded text-secondary">
@@ -132,52 +140,52 @@
 
             <!-- Start Contact Form -->
             <div class="col-lg-8 ">
-                <form class="contact-form row" method="post" action="#" role="form">
+                <form class="contact-form row" method="POST" role="form">
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
+                            <input type="text" class="form-control inputname form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
                             <label for="floatingname light-300">Nom</label>
                         </div>
                     </div><!-- End Input Name -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
+                            <input type="text" class="form-control inputemail form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
                             <label for="floatingemail light-300">E-mail</label>
                         </div>
                     </div><!-- End Input Email -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
+                            <input type="text" class="form-control inputphone form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
                             <label for="floatingphone light-300">Téléphoner</label>
                         </div>
                     </div><!-- End Input Phone -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
+                            <input type="text" class="form-control inputcompany form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
                             <label for="floatingcompany light-300">Nom de Société</label>
                         </div>
                     </div><!-- End Input Company Name -->
 
                     <div class="col-12">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
+                            <input type="text" class="form-control inputsubject form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
                             <label for="floatingsubject light-300">Matière</label>
                         </div>
                     </div><!-- End Input Subject -->
 
                     <div class="col-12">
                         <div class="form-floating mb-3">
-                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
+                            <textarea class="form-control inputmessage light-300" rows="8" placeholder="Message" id="floatingtextarea" name=""></textarea>
                             <label for="floatingtextarea light-300">Message</label>
                         </div>
                     </div><!-- End Textarea Message -->
 
                     <div class="col-md-12 col-12 m-auto text-end">
-                        <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Envoyer</button>
+                        <button type="submit" onclick="sendEmail()" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Envoyer</button>
                     </div>
 
                 </form>
@@ -320,8 +328,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Templatemo -->
     <script src="assets/js/templatemo.js"></script>
-    <!-- Custom -->
-    <script src="assets/js/custom.js"></script>
+    <!-- SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
 </body>
 
