@@ -16,13 +16,17 @@
   <link rel="stylesheet" href="assets/css/templatemo.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
-  <!--
+  <!-- Custom -->
+  <script src="assets/js/custom.js"></script>
+  <!-- Email -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_LCMH6TmhDy0jMq7orRx2L");
+    })();
+  </script>
 
-  TemplateMo 561 Purple Buzz
 
-  https://templatemo.com/tm-561-purple-buzz
-
-  -->
 </head>
 
 <body>
@@ -118,7 +122,6 @@
 
         <div class="row pb-4">
             <div class="col-lg-4">
-
                 <div class="contact row mb-4">
                     <div class="contact-icon col-lg-3 col-3">
                         <div class="border py-3 mb-2 text-center border rounded text-secondary">
@@ -137,52 +140,52 @@
 
             <!-- Start Contact Form -->
             <div class="col-lg-8 ">
-                <form class="contact-form row" method="post" action="#" role="form">
+                <form class="contact-form row" method="POST" role="form">
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
+                            <input type="text" class="form-control inputname form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
                             <label for="floatingname light-300">Nom</label>
                         </div>
                     </div><!-- End Input Name -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
+                            <input type="text" class="form-control inputemail form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
                             <label for="floatingemail light-300">E-mail</label>
                         </div>
                     </div><!-- End Input Email -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
+                            <input type="text" class="form-control inputphone form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
                             <label for="floatingphone light-300">Téléphoner</label>
                         </div>
                     </div><!-- End Input Phone -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
+                            <input type="text" class="form-control inputcompany form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
                             <label for="floatingcompany light-300">Nom de Société</label>
                         </div>
                     </div><!-- End Input Company Name -->
 
                     <div class="col-12">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
+                            <input type="text" class="form-control inputsubject form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
                             <label for="floatingsubject light-300">Matière</label>
                         </div>
                     </div><!-- End Input Subject -->
 
                     <div class="col-12">
                         <div class="form-floating mb-3">
-                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
+                            <textarea class="form-control inputmessage light-300" rows="8" placeholder="Message" id="floatingtextarea" name=""></textarea>
                             <label for="floatingtextarea light-300">Message</label>
                         </div>
                     </div><!-- End Textarea Message -->
 
                     <div class="col-md-12 col-12 m-auto text-end">
-                        <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Envoyer</button>
+                        <button type="submit" onclick="sendEmail()" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Envoyer</button>
                     </div>
 
                 </form>
@@ -325,8 +328,9 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Templatemo -->
     <script src="assets/js/templatemo.js"></script>
-    <!-- Custom -->
-    <script src="assets/js/custom.js"></script>
+    <!-- SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
 </body>
 
